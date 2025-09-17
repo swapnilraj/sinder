@@ -86,12 +86,18 @@ vercel --prod
 
 ## 🎮 How to Play
 
-1. **Connect Wallet** - Use RainbowKit to connect your wallet
+1. **Connect Wallet** - Use RainbowKit to connect your wallet (mobile-optimized with deep linking)
 2. **Switch to Base Sepolia** - Make sure you're on the right network  
-3. **Swipe Right** - Browse sins and swipe right to absolve them
+3. **Swipe Right** - Browse randomized sins and swipe right to absolve them
 4. **Pay ETH** - Confirm the transaction to pay for absolution
 5. **View Profile** - See your absolved sins as soulbound badges
 6. **Deploy New Sins** - Add your own sins for others to absolve
+
+### 📱 Mobile Support
+- **Optimized for mobile browsers** (Chrome, Safari, Brave)
+- **WalletConnect deep linking** for seamless wallet connection
+- **Touch-friendly interface** with proper button sizing
+- **Randomized sin order** for a fresh experience each visit
 
 ## 😈 Production Sins
 
