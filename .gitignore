@@ -52,6 +52,9 @@ frontend/coverage/
 *.tsbuildinfo
 next-env.d.ts
 
+# Vercel
+.vercel
+
 # Contracts - Foundry
 contracts/cache/
 contracts/out/
