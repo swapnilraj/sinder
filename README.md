@@ -76,8 +76,7 @@ npm run dev
 ### Production Deployment
 
 ```bash
-# Single command deployment
-cd frontend
+# Single command deployment from root directory
 vercel --prod
 
 # Environment variables (configured in vercel.json):

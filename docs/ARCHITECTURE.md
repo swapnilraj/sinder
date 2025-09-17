@@ -108,7 +108,7 @@ User → Profile Tab → API call → Read balanceOf() for all SinNFTs → Displ
 
 ### **Single Vercel Deployment**
 ```bash
-cd frontend
+# Deploy from root directory (vercel.json configured for frontend subdirectory)
 vercel --prod
 ```
 

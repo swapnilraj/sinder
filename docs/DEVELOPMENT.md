@@ -175,10 +175,10 @@ npm run start
 
 ### **Deploy to Vercel**
 ```bash
-cd frontend
+# Deploy from root directory (vercel.json handles frontend subdirectory)
 vercel --prod
 
-# Environment variables configured in vercel.json:
+# Environment variables configured in root vercel.json:
 # NEXT_PUBLIC_DEPLOYER_ADDRESS=0xC1952E19E01F570eF2A0B3711AdDEF9E78500182
 # RPC_URL=https://sepolia.base.org
 ```
