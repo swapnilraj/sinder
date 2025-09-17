@@ -1,9 +1,7 @@
 {
-  "framework": "nextjs",
   "buildCommand": "cd frontend && npm run build",
   "outputDirectory": "frontend/.next",
   "installCommand": "cd frontend && npm install",
-  "rootDirectory": "frontend",
   "env": {
     "NEXT_PUBLIC_DEPLOYER_ADDRESS": "0xC1952E19E01F570eF2A0B3711AdDEF9E78500182",
     "RPC_URL": "https://sepolia.base.org"
