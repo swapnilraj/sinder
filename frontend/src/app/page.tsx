@@ -2,11 +2,11 @@
 
 import { useEffect, useState, useCallback, useRef } from "react";
 import { useAccount, useWriteContract, useWaitForTransactionReceipt } from "wagmi";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Sin, SINNFT_ABI, getDeployerAddress } from "../lib/contracts";
 import SinCard from "../components/SinCard";
 import Profile, { ProfileRef } from "../components/Profile";
 import SinDeployer from "../components/SinDeployer";
+import { MobileWalletConnect } from "../components/MobileWalletConnect";
 import { useSins } from "../hooks/useSins";
 import { useAbsolvedSins } from "../hooks/useAbsolvedSins";
 
@@ -123,7 +123,7 @@ export default function Home() {
       <div className="bg-white shadow-sm border-b">
         <div className="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-gray-900">Sinder</h1>
-          <ConnectButton />
+          <MobileWalletConnect />
         </div>
       </div>
 
