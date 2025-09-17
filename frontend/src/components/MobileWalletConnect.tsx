@@ -2,6 +2,7 @@
 
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useEffect } from "react";
+import Image from "next/image";
 
 // Mobile-specific wallet connection enhancements
 export function MobileWalletConnect() {
@@ -115,9 +116,11 @@ export function MobileWalletConnect() {
                         }}
                       >
                         {chain.iconUrl && (
-                          <img
+                          <Image
                             alt={chain.name ?? 'Chain icon'}
                             src={chain.iconUrl}
+                            width={12}
+                            height={12}
                             style={{ width: 12, height: 12 }}
                           />
                         )}

@@ -23,8 +23,11 @@ export function useSins() {
       const response = await fetch(`${API_BASE}/api/sins?limit=100`);
       const data = await response.json();
       
+      // Ensure we have a proper Sin array with type safety
+      const sins: Sin[] = Array.isArray(data.sins) ? data.sins : [];
+      
       // Randomize the sin order for a fresh experience each time
-      const shuffledSins = shuffleArray(data.sins || []);
+      const shuffledSins = shuffleArray(sins);
       setSins(shuffledSins);
     } catch (err) {
       setError("Failed to load sins");
